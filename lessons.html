@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tudástár</title>
+</head>
+
+<body style="background-color: #f9f2ec">
+    
+    <a href="index.html">Főoldal</a>
+    <a href="team.html">Csapat</a>
+    <a href="lessons.html">Tudástár</a>
+    <a href="contact.html">Kapcsolat</a>
+    <a href="tasks.html">Feladatok</a>
+    <hr>
+    <h1>A weblapkészítés alapjai - HTML és JavaScript</h1>
+    <div><h2><a id="fejezetek" ></a>Tartalomjegyzék</h2>
+    <ul>
+        <li><a href="#hiv1">A változó alapfogalma - JS</a></li>
+        <li><a href="#hiv2">Primitívek - JS</a></li>
+        <li><a href="#hiv3">A változó mint objektum - JS</a></li>
+        <li><a href="#hiv4">Blokkszintű és inline elemek - HTML</a></li>
+        <li><a href="#hiv5">Az űrlapok - HTML</a></li>
+            </ul>
+    </div><br>
+    <div><h3><a id="hiv1" ></a><em>A változó alapfogalma - JS</em></h3>
+    <p>A változó, ahogy a neve is mutatja, egy olyan memória terület, ahol tetszőleges adatokat tárolhatunk.<br>
+        Létrehozásának két fontos lépése van.<br><br>
+        <strong>Deklaráció</strong><br><br>
+        Megadjuk a változó nevét, bizonyos nyelvekben a típusát is, de nem határozzuk meg, hogy milyen értéket tárolunk majd benne.<br><br>
+        Azt hogy változót akarunk deklarálni, a var kulcsszóval jelezzük.<br><br>
+        <strong>Definíció</strong><br><br>
+        Értéket adunk a változónknak, azt is mondhatjuk, hogy a memória területet feltöltjük adatokkal.
+    </p></div>
+    <p><img src="img/num-method.jpg" alt="num-method"></p>
+    <div><a href="#fejezetek" ><em><sub>Vissza a tartalomjegyzékhez</sub></em></a></div><br>
+    <div><h3><a id="hiv2"></a><em>Primitívek - JS</em></h3>
+    <p>A javascriptben a primitív típusok kivételével minden objektum. Ezért is mondjuk, hogy a javascript objektumalapú nyelv. <br>
+        A primitív típusok a következők:</p>
+        <ul>
+            <li>boolean</li>
+            <li>number</li>
+            <li>string</li>
+            <li>null</li>
+            <li>undefined</li>
+            <li>symbol</li>
+        </ul>
+        A boolean, string, number primitíveknek van objektum megfelelője is. Amikor egy primitíven hívunk meg valamilyen objektum metódust,<br>
+        automatikusan objektummá alakul, és a műveletet követően visszaalakul primitívvé.<br>
+        A primitív érték alakíthatatlan.
+    </div>
+    <div><a href="#fejezetek" ><em><sub>Vissza a tartalomjegyzékhez</sub></em></a></div><br>
+    <div><h3><a id="hiv3"></a><em>A változó mint objektum - JS</em></h3>
+        <p>Minden objektumnak lehetnek tulajdonságai (property) és metódusai (method).<br><br>
+            <strong>typeof</strong><br><br>
+            A változók típusát a typeof beépített függvény segítségével kérhetjük le.<br>
+            Ez csak az alapvető típusokat ismeri, a későbbiekben foglalkozunk a pontosabb típus meghatározással is.<br>
+            A változó típusát a tulajdonságai és metódusai alapján is meg lehet határozni.<br><br>
+        </p></div>
+    <div><a href="#fejezetek" ><em><sub>Vissza a tartalomjegyzékhez</sub></em></a></div><br>
+    <div><h3><a id="hiv4"></a><em>Blokkszintű és inline elemek - HTML</em></h3>
+    <p>A html elemeket megjelenésük szerint két nagy csoportra oszthatjuk. Vannak a blokkszintű, és az inline elemek. <br>
+        A blokkszintű elemek teljes szélességben betöltik a rendelkezésre álló helyet. Azaz mellettük már nem lehetnek <br>
+        új elemek. Általában fejlécekhez, kiemelt tartalmakhoz használják őket. Tipikusan blokkszintű elem az összes címsor,<br>
+        a bekezdések, űrlapok, táblázatok.
+     </p></div>
+     <div><a href="#fejezetek" ><em><sub>Vissza a tartalomjegyzékhez</sub></em></a></div><br>
+     <div><h3><a id="hiv5"></a><em>Az űrlapok - HTML</em></h3>
+        <p><strong>Az űrlapokon kérünk be adatokat a felhasználótól.</strong></p>
+            Ezek az adatok lehetnek email címek, jelszavak, hosszabb szövegek, bármi.<br>
+            Az egyes bevitt adatokat fogják össze az űrlapok.<br><br>
+            <strong>Űrlapot a form elem használatával hozhatunk létre.</strong><br><br>
+            Az <strong>input </strong>elem az adatok kézi bevitelére szolgál.<br>
+            Az input mezőket címkével láthatjuk el, ez a <strong>label</strong> elem.<br><br>
+            Az input elem fontos tulajdonságai:
+            <ul>
+                <li>name: az adat neve, későbbi azonosításhoz kell</li>
+                <li>type: az adat típusa, lehet (text, password, radio, ...)</li>
+            </ul>
+            <strong>required tulajdonság</strong><br>
+            Az input mezőnek megadhatjuk a required tulajdonságot, ha az adat szükséges.<br>
+            Ha a felhasználó nem tölti ki az elemet, a legtöbb böngésző figyelmeztet és nem engedi az<br> 
+            űrlapot elküldeni a szerver felé. Ez később válik majd fontossá, amikor az űrlapot<br>
+            összekötjük majd a szerverrel.
+         </div>
+         <p><img src="img/urlap.jpg" alt="urlap"></p>
+         <div><a href="#fejezetek" ><em><sub>Vissza a tartalomjegyzékhez</sub></em></a></div><br>
+         <footer>
+          <hr>
+          <p>&copy; 2018 - <i>A kirántott hús rizsával</i> csapat
+              honlapja</p>
+      </footer>
+</body>
+
+</html>
