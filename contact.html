@@ -6,56 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kapcsolat</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body style="background-color: #f9f2ec">
     <nav>
-        <a href="index.html">Főoldal</a>
-        <a href="team.html">Csapat</a>
-        <a href="lessons.html">Tudástár</a>
-        <a href="contact.html">Kapcsolat</a>
-        <a href="tasks.html">Feladatok</a>
-        <hr>
+        <ul>
+            <li class="menu"><a href="index.html">Főoldal </a></li>
+            <li><a href="team.html">Csapat </a></li>
+            <li><a href="lessons.html">Tudástár </a></li>
+            <li><a href="contact.html">Kapcsolat </a></li>
+            <li><a href="tasks.html">Feladatok </a></li>
+        </ul>
     </nav>
-    <h1>Kapcsolat</h1>
-    <p>Amennyiben kérdése, vagy észrevétele van, kérjük használja az alábbi
-        űrlapot. Mi mindent megteszünk annak érdekében, hogy a lehető
-        leggyorsabban válaszoljunk
-        Önnek.
-        <br>
-        Köszönjük.</p>
-
-    <form action="mailto:example@example.com" enctype="text/plain" method="POST">
-        <div>
-            <label for="teljesnev">*Teljes név: </label>
-            <input type="text" name="teljesnev" id="teljesnev" required>
-            <br> <br>
-            <label for="useremail">*Email: </label>
-            <input type="email" name="useremail" id="useremail" required>
-            <br><br>
-            <label for="telefon">Telefon: </label>
-            <input type="tel" name="telefon" id="telefon">
-            <br><br>
-            <label for="targy">Tárgy: </label>
-            <input type="text" name="targy" id="targy">
-            <br><br>
-            <label for="hirlevel">Szeretnék hírlevelet</label>
-            <input type="checkbox" name="hirlevel" id="hirlevel" checked>
-            <br><br>
-            <label for="megjegyzes">Megjegyzés: </label>
+    <div class="container">
+        <h1>Kapcsolat</h1>
+        <p>Amennyiben kérdése, vagy észrevétele van, kérjük használja az alábbi
+            űrlapot. Mi mindent megteszünk annak érdekében, hogy a lehető
+            leggyorsabban válaszoljunk
+            Önnek.
             <br>
-            <textarea name="megjegyzes" id="megjegyzes" cols="40" rows="4"></textarea>
-            <p><i>*Kötelező kitölteni</i></p>
-            <br> <br>
-            <input type="submit" value="Elküld">
-        </div>
-    </form>
-    <br>
-    <footer>
-        <hr>
-        <p>&copy; 2018 - <i>A kirántott hús rizsával</i> csapat
-            honlapja</p>
-    </footer>
+            Köszönjük.</p>
+
+        <form action="mailto:example@example.com" enctype="text/plain" method="POST">
+            <div>
+                <label for="teljesnev">*Teljes név: </label>
+                <input type="text" name="teljesnev" id="teljesnev" required>
+                <br> <br>
+                <label for="useremail">*Email: </label>
+                <input type="email" name="useremail" id="useremail" required>
+                <br><br>
+                <label for="telefon">Telefon: </label>
+                <input type="tel" name="telefon" id="telefon">
+                <br><br>
+                <label for="targy">Tárgy: </label>
+                <input type="text" name="targy" id="targy">
+                <br><br>
+                <label for="hirlevel">Szeretnék hírlevelet</label>
+                <input type="checkbox" name="hirlevel" id="hirlevel" checked>
+                <br><br>
+                <label for="megjegyzes">Megjegyzés: </label>
+                <br>
+                <textarea name="megjegyzes" id="megjegyzes" cols="40" rows="4"></textarea>
+                <p><i>*Kötelező kitölteni</i></p>
+                <br> <br>
+                <input class="button" type="submit" value="Elküld">
+            </div>
+        </form>
+        <br>
+        <footer>
+            <hr>
+            <p>&copy; 2018 - <i>A kirántott hús rizsával</i> csapat
+                honlapja</p>
+        </footer>
+    </div>
 </body>
 
 </html>
