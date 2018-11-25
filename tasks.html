@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <title>Feladatok</title>
 </head>
 
@@ -70,22 +71,25 @@
     <h3>Miki</h3>
     <form name="Miki-calc">
       <table> 
-        <thead>
-            <tr>
-          <th>
-            <span class="display">
-                <label> </label>
-            </span>
-          </th>
-        </tr>
-        </thead>
         <tbody>
+            <td id="dis1"></td>
+            <td>
+                <select id="muveletek">
+                    <option value="select">select</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="/">/</option>
+                    <option value="*">*</option>
+                    <option value="**">**</option>
+                    <option value="%">%</option>
+                </select>
+            </td>
+            <td id="dis2"></td>
           <tr>
           <td>
             <input type="button" id="1" value="1" onclick="number(1)">
             <input type="button" id="2" value="2" onclick="number(2)">
             <input type="button" id="3" value="3" onclick="number(3)">
-            <input type="button" id="+" value="+" onclick="muvelet(10)">
           </td>
           </tr>
           <tr>
@@ -93,7 +97,6 @@
                 <input type="button" id="4" value="4" onclick="number(4)">
                 <input type="button" id="5" value="5" onclick="number(5)">
                 <input type="button" id="6" value="6" onclick="number(6)">
-                <input type="button" id="-" value="-" onclick="muvelet(11)">
               </td>
               </tr>
           <tr>
@@ -101,16 +104,17 @@
             <input type="button" id="7" value="7" onclick="number(7)">
             <input type="button" id="8" value="8" onclick="number(8)">
             <input type="button" id="9" value="9" onclick="number(9)">
-            <input type="button" id="*" value="*" onclick="muvelet(12)">
           </td>
           </tr>
           <tr>
               <td>
                 <input type="button" id="0" value="0" onclick="number(0)">
-                <input type="button" id="ce" value="ce" onclick="torles()">
-                <input type="button" id="=" value="=" onclick="muvelet(14)">
-                <input type="button" id="/" value="/" onclick="muvelet(13)">
+                <input type="button" id="." value="." onclick="torles()">
+                <input type="button" id="=" value="=" onclick="calc()">
               </td>
+              </tr>
+              <tr>
+                  <td id="eredmeny">Eredmény</td>
               </tr>
         </tbody>
       </table>
