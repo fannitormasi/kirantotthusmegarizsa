@@ -135,6 +135,64 @@
             <p id="szum"></p>
         </form>
         <br><br>
+        <h2>Matyi 2</h2>
+        <div id="matyi-calc">
+            <form action="">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" id="resultmatyi">
+                                <div id="matyi-result">0</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="1" onclick="matyinumberfunction1()"></td>
+                            <td><input type="button" value="2" onclick="matyinumberfunction2()"></td>
+                            <td><input type="button" value="3" onclick="matyinumberfunction3()"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="4" onclick="matyinumberfunction4()"></td>
+                            <td><input type="button" value="5" onclick="matyinumberfunction5()"></td>
+                            <td><input type="button" value="6" onclick="matyinumberfunction6()"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="7" onclick="matyinumberfunction7()"></td>
+                            <td><input type="button" value="8" onclick="matyinumberfunction8()"></td>
+                            <td><input type="button" value="9" onclick="matyinumberfunction9()"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value=". " onclick="matyinumberfunctiondot()"></td>
+                            <td><input type="button" value="0" onclick="matyinumberfunction0()"></td>
+                            <td><input type="reset" value="=" onclick="matyicalculate()"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="firstnumber-matyi"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="matyi-operators" id="matyi-operatorselector">
+                                    <option class="custom-option" value="select">Select</option>
+                                    <option class="custom-option" value="+">+</option>
+                                    <option class="custom-option" value="-">-</option>
+                                    <option class="custom-option" value="*">*</option>
+                                    <option class="custom-option" value="/">/</option>
+                                    <option class="custom-option" value="pow">toUpperCase(y)</option>
+                                    <option class="custom-option" value="%">%</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="secondnumber-matyi"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
         <footer>
             <hr>
             <p>&copy; 2018 - <i>A kirántott hús rizsával</i> csapat
