@@ -6,136 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Feladatok</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body style="background-color: #f9f2ec">
-    <a href="index.html">Főoldal</a>
-    <a href="team.html">Csapat</a>
-    <a href="lessons.html">Tudástár</a>
-    <a href="contact.html">Kapcsolat</a>
-    <a href="tasks.html">Feladatok</a>
-    <hr>
-    <h1>Feladatok</h1>
-    <h3>Fanni</h3>
+    <nav>
+        <ul>
+            <li class="menu"><a href="index.html">Főoldal </a></li>
+            <li><a href="team.html">Csapat </a></li>
+            <li><a href="lessons.html">Tudástár </a></li>
+            <li><a href="contact.html">Kapcsolat </a></li>
+            <li><a href="tasks.html">Feladatok </a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Feladatok</h1>
+        <h3>Fanni</h3>
 
-    Első szám: <input type="text" id="n1" /><br /><br />
-    Második szám: <input type="text" id="n2" /><br /><br />
+        Első szám: <input type="text" id="n1" /><br /><br />
+        Második szám: <input type="text" id="n2" /><br /><br />
 
-    <select id="operators">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="/">/</option>
-        <option value="X">X</option>
-    </select>
+        <select id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="X">X</option>
+        </select>
 
-    <button onclick="szamolFanni()">=</button>
-    <input type="text" id="result" />
+        <button onclick="szamolFanni()">=</button>
+        <input type="text" id="result" />
 
 
 
-    <h3>Matyi</h3>
-    <form name="matyicalculator">
+        <h3>Matyi</h3>
+        <form name="matyicalculator">
 
-        <table>
-            <tr>
-                <td colspan="4"><input type="text" id="display" disabled size="12"></td>
-            </tr>
-            <tr>
-                <td><input type="button" onclick="display.value+=`1`" value="1"></td>
-                <td><input type="button" onclick="display.value+=`2`" value="2"></td>
-                <td><input type="button" onclick="display.value+=`3`" value="3"></td>
-                <td><input type="button" onclick="display.value+=`+`" value="+"> </td>
-            </tr>
-            <tr>
-                <td><input type="button" onclick="display.value+=`4`" value="4"></td>
-                <td><input type="button" onclick="display.value+=`5`" value="5"></td>
-                <td><input type="button" onclick="display.value+=`6`" value="6"></td>
-                <td><input type="button" onclick="display.value+=`-`" value="-"></td>
-            </tr>
-            <tr>
-                <td><input type="button" onclick="display.value+=`7`" value="7"></td>
-                <td><input type="button" onclick="display.value+=`8`" value="8"></td>
-                <td><input type="button" onclick="display.value+=`9`" value="9"></td>
-                <td><input type="button" onclick="display.value+=`*`" value="*"></td>
-            </tr>
-            <tr>
-                <td><input type="reset" name="clr" id="clr" value="c"></td>
-                <td><input type="button" onclick="display.value+=`0`" value="0"></td>
-                <td><input type="button" onclick="display.value=eval(display.value)" value="="></td>
-                <td><input type="button" onclick="display.value+=`/`" value="/"></td>
-            </tr>
-        </table>
-    </form>
+            <table>
+                <tr>
+                    <td colspan="4"><input type="text" id="display" disabled size="12"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="display.value+=`1`" value="1"></td>
+                    <td><input type="button" onclick="display.value+=`2`" value="2"></td>
+                    <td><input type="button" onclick="display.value+=`3`" value="3"></td>
+                    <td><input type="button" onclick="display.value+=`+`" value="+"> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="display.value+=`4`" value="4"></td>
+                    <td><input type="button" onclick="display.value+=`5`" value="5"></td>
+                    <td><input type="button" onclick="display.value+=`6`" value="6"></td>
+                    <td><input type="button" onclick="display.value+=`-`" value="-"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="display.value+=`7`" value="7"></td>
+                    <td><input type="button" onclick="display.value+=`8`" value="8"></td>
+                    <td><input type="button" onclick="display.value+=`9`" value="9"></td>
+                    <td><input type="button" onclick="display.value+=`*`" value="*"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" name="clr" id="clr" value="c"></td>
+                    <td><input type="button" onclick="display.value+=`0`" value="0"></td>
+                    <td><input type="button" onclick="display.value=eval(display.value)" value="="></td>
+                    <td><input type="button" onclick="display.value+=`/`" value="/"></td>
+                </tr>
+            </table>
+        </form>
 
-    <h3>Miki</h3>
-    <form name="Miki-calc">
-      <table> 
-        <thead>
-            <tr>
-          <th>
-            <span class="display">
-                <label> </label>
-            </span>
-          </th>
-        </tr>
-        </thead>
-        <tbody>
-          <tr>
-          <td>
-            <input type="button" id="1" value="1" onclick="number(1)">
-            <input type="button" id="2" value="2" onclick="number(2)">
-            <input type="button" id="3" value="3" onclick="number(3)">
-            <input type="button" id="+" value="+" onclick="muvelet(10)">
-          </td>
-          </tr>
-          <tr>
-              <td>
-                <input type="button" id="4" value="4" onclick="number(4)">
-                <input type="button" id="5" value="5" onclick="number(5)">
-                <input type="button" id="6" value="6" onclick="number(6)">
-                <input type="button" id="-" value="-" onclick="muvelet(11)">
-              </td>
-              </tr>
-          <tr>
-          <td>
-            <input type="button" id="7" value="7" onclick="number(7)">
-            <input type="button" id="8" value="8" onclick="number(8)">
-            <input type="button" id="9" value="9" onclick="number(9)">
-            <input type="button" id="*" value="*" onclick="muvelet(12)">
-          </td>
-          </tr>
-          <tr>
-              <td>
-                <input type="button" id="0" value="0" onclick="number(0)">
-                <input type="button" id="ce" value="ce" onclick="torles()">
-                <input type="button" id="=" value="=" onclick="muvelet(14)">
-                <input type="button" id="/" value="/" onclick="muvelet(13)">
-              </td>
-              </tr>
-        </tbody>
-      </table>
-    </form>
- 
-    <h3>Médea</h3>
-    <form name="medacalculator" id="medacalculator">
-        <label for="num1">Szám1</label>
-        <input type="text" id="num1" name="num1">
-        <label for="num2">Szám2</label>
-        <input type="text" id="num2" name="num2">
-        <input type="button" value="+" name="plus" onclick="plusCalculate()">
-        <input type="button" value="-" name="minus" onclick="minusCalculate()">
-        <input type="button" value="*" name="multiplication" onclick="multiplicationCalculate()">
-        <input type="button" value="/" name="division" onclick="divisionCalculate()">
-        <p><strong>Eredmény:</strong></p>
-        <p id="szum"></p>
-    </form>
-    <br><br>
-     <footer>
-         <hr>
-         <p>&copy; 2018 - <i>A kirántott hús rizsával</i> csapat
-             honlapja</p>
-     </footer>
-     <script src="js/calc.js"></script>
+        <h3>Miki</h3>
+        <form name="Miki-calc">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <span class="display">
+                                <label> </label>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="button" id="1" value="1" onclick="number(1)">
+                            <input type="button" id="2" value="2" onclick="number(2)">
+                            <input type="button" id="3" value="3" onclick="number(3)">
+                            <input type="button" id="+" value="+" onclick="muvelet(10)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" id="4" value="4" onclick="number(4)">
+                            <input type="button" id="5" value="5" onclick="number(5)">
+                            <input type="button" id="6" value="6" onclick="number(6)">
+                            <input type="button" id="-" value="-" onclick="muvelet(11)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" id="7" value="7" onclick="number(7)">
+                            <input type="button" id="8" value="8" onclick="number(8)">
+                            <input type="button" id="9" value="9" onclick="number(9)">
+                            <input type="button" id="*" value="*" onclick="muvelet(12)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" id="0" value="0" onclick="number(0)">
+                            <input type="button" id="ce" value="ce" onclick="torles()">
+                            <input type="button" id="=" value="=" onclick="muvelet(14)">
+                            <input type="button" id="/" value="/" onclick="muvelet(13)">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+        <h3>Médea</h3>
+        <form name="medacalculator" id="medacalculator">
+            <label for="num1">Szám1</label>
+            <input type="text" id="num1" name="num1">
+            <label for="num2">Szám2</label>
+            <input type="text" id="num2" name="num2">
+            <input type="button" value="+" name="plus" onclick="plusCalculate()">
+            <input type="button" value="-" name="minus" onclick="minusCalculate()">
+            <input type="button" value="*" name="multiplication" onclick="multiplicationCalculate()">
+            <input type="button" value="/" name="division" onclick="divisionCalculate()">
+            <p><strong>Eredmény:</strong></p>
+            <p id="szum"></p>
+        </form>
+        <br><br>
+        <footer>
+            <hr>
+            <p>&copy; 2018 - <i>A kirántott hús rizsával</i> csapat
+                honlapja</p>
+        </footer>
+    </div>
+    <script src="js/calc.js"></script>
 </body>
 
 </html>
