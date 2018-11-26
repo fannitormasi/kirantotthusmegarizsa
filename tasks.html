@@ -196,14 +196,58 @@
                     </tbody>
                 </table>
             </form>
-        </div>
-        <br><br>
-        <footer>
-            <hr>
-            <p>&copy; 2018 - <i>A kirántott hús rizsával</i> csapat
-                honlapja</p>
-        </footer>
-        <script src="js/calc.js"></script>
+            <h2>Fanni 2</h2>
+            <br>
+            <form name="calculator">
+                <input type="text" name="numone" id="numone" /><br size="5" />
+
+                <select id="operators">
+                    <option value="" selected></option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="/" id="/">/</option>
+                    <option value="*">*</option>
+                    <option value="%">%</option>
+                    <option value="**">**</option>
+                </select><br />
+
+                <input type="text" name="numtwo" id="numtwo" /><br />
+
+                <input type="button" value="0" name="0" id="0" onclick="document.calculator.numone.value +=0" />
+                <input type="button" value="1" name="1" id="1" onclick="document.calculator.numone.value +=1" />
+                <input type="button" value="2" name="2" id="2" onclick="document.calculator.numone.value +=2" /><br />
+                <input type="button" value="3" name="3" id="3" onclick="document.calculator.numone.value +=3" />
+                <input type="button" value="4" name="4" id="4" onclick="document.calculator.numone.value +=4" />
+                <input type="button" value="5" name="5" id="5" onclick="document.calculator.numone.value +=5" /><br />
+                <input type="button" value="6" name="6" id="6" onclick="document.calculator.numone.value +=6" />
+                <input type="button" value="7" name="7" id="7" onclick="document.calculator.numone.value +=7" />
+                <input type="button" value="8" name="8" id="8" onclick="document.calculator.numone.value +=8" /><br />
+                <input type="button" value="9" name="9" id="9" onclick="document.calculator.numone.value +=9" />
+
+                <input type="button" value="." name="btndot" id="btndot" onclick="document.calculator.numone.value +='.'" /><br />
+
+                <input type="button" value="0" name="0" id="0.2" onclick="document.calculator.numtwo.value +=0" />
+                <input type="button" value="1" name="1" id="1.2" onclick="document.calculator.numtwo.value +=1" />
+                <input type="button" value="2" name="2" id="2.2" onclick="document.calculator.numtwo.value +=2" /><br />
+                <input type="button" value="3" name="3" id="3.2" onclick="document.calculator.numtwo.value +=3" />
+                <input type="button" value="4" name="4" id="4.2" onclick="document.calculator.numtwo.value +=4" />
+                <input type="button" value="5" name="5" id="5.2" onclick="document.calculator.numtwo.value +=5" /><br />
+                <input type="button" value="6" name="6" id="6.2" onclick="document.calculator.numtwo.value +=6" />
+                <input type="button" value="7" name="7" id="7.2" onclick="document.calculator.numtwo.value +=7" />
+                <input type="button" value="8" name="8" id="8.2" onclick="document.calculator.numtwo.value +=8" /><br />
+                <input type="button" value="9" name="9" id="9.2" onclick="document.calculator.numtwo.value +=9" />
+                <input data-action="decimal" type="button" value="." name="btndot2" id="btndot2" onclick="document.calculator.numtwo.value +='.'" />
+                <br />
+                <input type="button" value="=" name="btnresult" id="btnresult" onclick="Result()" /><br />
+                <input type="text" name="result" id="result" />
+            </form>
+            <br><br>
+            <footer>
+                <hr>
+                <p>&copy; 2018 - <i>A kirántott hús rizsával</i> csapat
+                    honlapja</p>
+            </footer>
+            <script src="js/calc.js"></script>
 </body>
 
 </html>

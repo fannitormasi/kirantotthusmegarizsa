@@ -28,7 +28,7 @@ function calc() {
 }
 
 function number(num) {
-  var operatorSelected  = document.querySelector('#muveletek').value === 'select';
+  var operatorSelected = document.querySelector('#muveletek').value === 'select';
   if (operatorSelected) {
     document.querySelector('#dis1').value = num;
     document.querySelector('#dis1').innerHTML = document.querySelector('#dis1').value;
@@ -207,5 +207,43 @@ function matyicalculate() {
   }
   if (operator === '%') {
     document.querySelector('#matyi-result').innerHTML = number1 % number2;
+  }
+}
+
+function Result() {
+  var oper = document.getElementById('operators').value;
+  var n1 = parseFloat(document.getElementById('numone').value);
+  var n2 = parseFloat(document.getElementById('numtwo').value);
+
+
+  if (oper === '+') {
+    document.getElementById('result').value = n1 + n2;
+    document.getElementById('numone').value = '';
+    document.getElementById('numtwo').value = '';
+  }
+  if (oper === '-') {
+    document.getElementById('result').value = n1 - n2;
+    document.getElementById('numone').value = '';
+    document.getElementById('numtwo').value = '';
+  }
+  if (oper === '*') {
+    document.getElementById('result').value = n1 * n2;
+    document.getElementById('numone').value = '';
+    document.getElementById('numtwo').value = '';
+  }
+  if (oper === '/') {
+    document.getElementById('result').value = n1 / n2;
+    document.getElementById('numone').value = '';
+    document.getElementById('numtwo').value = '';
+  }
+  if (oper === '%') {
+    document.getElementById('result').value = n1 % n2;
+    document.getElementById('numone').value = '';
+    document.getElementById('numtwo').value = '';
+  }
+  if (oper === '**') {
+    document.getElementById('result').value = n1 ** n2;
+    document.getElementById('numone').value = '';
+    document.getElementById('numtwo').value = '';
   }
 }
