@@ -52,3 +52,6 @@ textarea {
   background-color: #f0c464;
   cursor: pointer;
 }
+#dis1, #dis2 {
+  border: 1px solid black;
+}
