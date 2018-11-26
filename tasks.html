@@ -73,78 +73,137 @@
             </table>
         </form>
 
-    <h3>Miki</h3>
-    <form name="Miki-calc">
-      <table> 
-        <tbody>
-            <td id="dis1"></td>
-            <td>
-                <select id="muveletek">
-                    <option value="select">select</option>
-                    <option value="+">+</option>
-                    <option value="-">-</option>
-                    <option value="/">/</option>
-                    <option value="*">*</option>
-                    <option value="**">**</option>
-                    <option value="%">%</option>
-                </select>
-            </td>
-            <td id="dis2"></td>
-          <tr>
-          <td>
-            <input type="button" id="1" value="1" onclick="number(1)">
-            <input type="button" id="2" value="2" onclick="number(2)">
-            <input type="button" id="3" value="3" onclick="number(3)">
-          </td>
-          </tr>
-          <tr>
-              <td>
-                <input type="button" id="4" value="4" onclick="number(4)">
-                <input type="button" id="5" value="5" onclick="number(5)">
-                <input type="button" id="6" value="6" onclick="number(6)">
-              </td>
-              </tr>
-          <tr>
-          <td>
-            <input type="button" id="7" value="7" onclick="number(7)">
-            <input type="button" id="8" value="8" onclick="number(8)">
-            <input type="button" id="9" value="9" onclick="number(9)">
-          </td>
-          </tr>
-          <tr>
-              <td>
-                <input type="button" id="0" value="0" onclick="number(0)">
-                <input type="button" id="." value="." onclick="number('.')">
-                <input type="button" id="=" value="=" onclick="calc()">
-              </td>
-              </tr>
-              <tr>
-                  <td id="eredmeny">Eredmény</td>
-              </tr>
-        </tbody>
-      </table>
-    </form>
- 
-    <h3>Médea</h3>
-    <form name="medacalculator" id="medacalculator">
-        <label for="num1">Szám1</label>
-        <input type="text" id="num1" name="num1">
-        <label for="num2">Szám2</label>
-        <input type="text" id="num2" name="num2">
-        <input type="button" value="+" name="plus" onclick="plusCalculate()">
-        <input type="button" value="-" name="minus" onclick="minusCalculate()">
-        <input type="button" value="*" name="multiplication" onclick="multiplicationCalculate()">
-        <input type="button" value="/" name="division" onclick="divisionCalculate()">
-        <p><strong>Eredmény:</strong></p>
-        <p id="szum"></p>
-    </form>
-    <br><br>
-     <footer>
-         <hr>
-         <p>&copy; 2018 - <i>A kirántott hús rizsával</i> csapat
-             honlapja</p>
-     </footer>
-     <script src="js/calc.js"></script>
+        <h3>Miki</h3>
+        <form name="Miki-calc">
+            <table>
+                <tbody>
+                    <td id="dis1"></td>
+                    <td>
+                        <select id="muveletek">
+                            <option value="select">select</option>
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="/">/</option>
+                            <option value="*">*</option>
+                            <option value="**">**</option>
+                            <option value="%">%</option>
+                        </select>
+                    </td>
+                    <td id="dis2"></td>
+                    <tr>
+                        <td>
+                            <input type="button" id="1" value="1" onclick="number(1)">
+                            <input type="button" id="2" value="2" onclick="number(2)">
+                            <input type="button" id="3" value="3" onclick="number(3)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" id="4" value="4" onclick="number(4)">
+                            <input type="button" id="5" value="5" onclick="number(5)">
+                            <input type="button" id="6" value="6" onclick="number(6)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" id="7" value="7" onclick="number(7)">
+                            <input type="button" id="8" value="8" onclick="number(8)">
+                            <input type="button" id="9" value="9" onclick="number(9)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" id="0" value="0" onclick="number(0)">
+                            <input type="button" id="." value="." onclick="number('.')">
+                            <input type="button" id="=" value="=" onclick="calc()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="eredmeny">Eredmény</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+        <h3>Médea</h3>
+        <form name="medacalculator" id="medacalculator">
+            <label for="num1">Szám1</label>
+            <input type="text" id="num1" name="num1">
+            <label for="num2">Szám2</label>
+            <input type="text" id="num2" name="num2">
+            <input type="button" value="+" name="plus" onclick="plusCalculate()">
+            <input type="button" value="-" name="minus" onclick="minusCalculate()">
+            <input type="button" value="*" name="multiplication" onclick="multiplicationCalculate()">
+            <input type="button" value="/" name="division" onclick="divisionCalculate()">
+            <p><strong>Eredmény:</strong></p>
+            <p id="szum"></p>
+        </form>
+        <br><br>
+        <h2>Matyi 2</h2>
+        <div id="matyi-calc">
+            <form action="">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" id="resultmatyi">
+                                <div id="matyi-result">0</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="1" onclick="matyinumberfunction1()"></td>
+                            <td><input type="button" value="2" onclick="matyinumberfunction2()"></td>
+                            <td><input type="button" value="3" onclick="matyinumberfunction3()"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="4" onclick="matyinumberfunction4()"></td>
+                            <td><input type="button" value="5" onclick="matyinumberfunction5()"></td>
+                            <td><input type="button" value="6" onclick="matyinumberfunction6()"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="7" onclick="matyinumberfunction7()"></td>
+                            <td><input type="button" value="8" onclick="matyinumberfunction8()"></td>
+                            <td><input type="button" value="9" onclick="matyinumberfunction9()"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value=". " onclick="matyinumberfunctiondot()"></td>
+                            <td><input type="button" value="0" onclick="matyinumberfunction0()"></td>
+                            <td><input type="reset" value="=" onclick="matyicalculate()"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="firstnumber-matyi"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="matyi-operators" id="matyi-operatorselector">
+                                    <option class="custom-option" value="select">Select</option>
+                                    <option class="custom-option" value="+">+</option>
+                                    <option class="custom-option" value="-">-</option>
+                                    <option class="custom-option" value="*">*</option>
+                                    <option class="custom-option" value="/">/</option>
+                                    <option class="custom-option" value="pow">X^y</option>
+                                    <option class="custom-option" value="%">%</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="secondnumber-matyi"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <br><br>
+        <footer>
+            <hr>
+            <p>&copy; 2018 - <i>A kirántott hús rizsával</i> csapat
+                honlapja</p>
+        </footer>
+        <script src="js/calc.js"></script>
 </body>
 
 </html>
