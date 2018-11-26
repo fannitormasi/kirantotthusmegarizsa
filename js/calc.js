@@ -217,32 +217,32 @@ function Result() {
 
 
   if (oper === '+') {
-    document.getElementById('result').value = n1 + n2;
+    document.getElementById('fanniresult').value = n1 + n2;
     document.getElementById('numone').value = '';
     document.getElementById('numtwo').value = '';
   }
   if (oper === '-') {
-    document.getElementById('result').value = n1 - n2;
+    document.getElementById('fanniresult').value = n1 - n2;
     document.getElementById('numone').value = '';
     document.getElementById('numtwo').value = '';
   }
   if (oper === '*') {
-    document.getElementById('result').value = n1 * n2;
+    document.getElementById('fanniresult').value = n1 * n2;
     document.getElementById('numone').value = '';
     document.getElementById('numtwo').value = '';
   }
   if (oper === '/') {
-    document.getElementById('result').value = n1 / n2;
+    document.getElementById('fanniresult').value = n1 / n2;
     document.getElementById('numone').value = '';
     document.getElementById('numtwo').value = '';
   }
   if (oper === '%') {
-    document.getElementById('result').value = n1 % n2;
+    document.getElementById('fanniresult').value = n1 % n2;
     document.getElementById('numone').value = '';
     document.getElementById('numtwo').value = '';
   }
   if (oper === '**') {
-    document.getElementById('result').value = n1 ** n2;
+    document.getElementById('fanniresult').value = n1 ** n2;
     document.getElementById('numone').value = '';
     document.getElementById('numtwo').value = '';
   }
